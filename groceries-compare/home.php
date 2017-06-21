@@ -1,5 +1,5 @@
 <? include "header.php" ?>
-<!--@todo İşlemler tamamlanınca css dosyasına taşınacak->
+<!--@todo İşlemler tamamlanınca css dosyasına taşınacak-->
 <style>
 	@media screen and (max-width: 992px) {
 		#square{
