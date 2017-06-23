@@ -1,4 +1,3 @@
- <!DOCTYPE html>
  <html>
  <head>
  	<!--Import Google Icon Font-->
@@ -7,11 +6,26 @@
  	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
  	<link type="text/css" rel="stylesheet" href="css/custom.css">
 
+ 	<!--Font Awesome-->
+ 	<script src="https://use.fontawesome.com/724b0a3112.js"></script>
  	<!--Let browser know website is optimized for mobile-->
  	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
  	<title>Groceries Comparison</title>
  </head>
  <body>
+ 	<style>
+ 		.navbarButtons{
+ 			margin-top: 0.2em;
+ 		}
+ 		.fixed-action-btn{
+ 			position: fixed;
+ 			bottom:45px;
+ 			right:24px;
+ 		}
+ 		#updatedInfo{
+ 			font-weight: bold;
+ 		}
+ 	</style>
  	<div class="container">
  		<nav class="cyan">
  			<div class="nav-wrapper">
@@ -38,8 +52,8 @@
  						<a href="#!email"><span class="white-text email">info@groceriescompare.com</span></a>
  					</div>
  				</li>
- 				<li><a href="#!" class="waves-effect waves-orange">Anasayfa</a></li>
- 				<li><a href="#!" class="waves-effect waves-orange">Marketler</a></li>
+ 				<li><a href="homepage.php" class="waves-effect waves-orange">Anasayfa</a></li>
+ 				<li><a href="groceries.php" class="waves-effect waves-orange">Marketler</a></li>
  				<li><a href="#!" class="waves-effect waves-orange">Ürünler</a></li>
  				<li><a href="#!" class="waves-effect waves-orange">Karşılaştırma</a></li>
  			</ul>
@@ -48,10 +62,10 @@
  		<div class="row">
  			<div class="navbarButtons center-align hide-on-med-and-down">
  				<div class="col m3">
- 				<a class="white grey-text text-darken-1 z-depth-0 waves-effect waves-yellow btn-large navbarButton" style="width: 100%;"><strong>Anasayfa</strong></a>
+ 					<a href="homepage.php" class="white grey-text text-darken-1 z-depth-0 waves-effect waves-yellow btn-large navbarButton" style="width: 100%;"><strong>Anasayfa</strong></a>
  				</div>
  				<div class="col m3">
- 					<a class="white grey-text text-darken-1 z-depth-0 waves-effect waves-yellow btn-large navbarButton" style="width: 100%;"><strong>Marketler</strong></a>
+ 					<a href="groceries.php" class="white grey-text text-darken-1 z-depth-0 waves-effect waves-yellow btn-large navbarButton" style="width: 100%;"><strong>Marketler</strong></a>
  				</div>
  				<div class="col m3">
  					<a class="white grey-text text-darken-1 z-depth-0 waves-effect waves-yellow btn-large navbarButton" style="width: 100%;"><strong>Ürünler</strong></a>
@@ -64,12 +78,12 @@
 
  		<!--TAP TARGET-->
  		<div class="fixed-action-btn">
- 			<a href="#" id="menu" onclick="$('.tap-target').tapTarget('open')" class="waves-effect waves-light btn btn-floating cyan"><i class="material-icons">menu</i></a>
+ 			<a href="#" id="menu" onclick="$('.tap-target').tapTarget('open')" class="waves-effect waves-light btn btn-floating  red lighten-1"><i class="material-icons">menu</i></a>
  		</div>
  		<!--TAP TARGET CONTENT-->
  		<div class="tap-target cyan" data-activates="menu">
  			<div class="tap-target-content white-text">
  				<h5>Ürünlerin Son<br> Güncellenme Tarihi</h5>
- 				<h5 class="orange-text" id="updatedInfo">20.6.2017</h5>
+ 				<h5 class=" red-text lighten-1" id="updatedInfo">20.6.2017</h5>
  			</div>
  		</div>

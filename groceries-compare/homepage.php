@@ -1,5 +1,4 @@
-<? include "header.php" ?>
-<!--@todo İşlemler tamamlanınca css dosyasına taşınacak-->
+<?php include "header.php" ?>
 <style>
 	@media screen and (max-width: 992px) {
 		#square{
@@ -7,6 +6,8 @@
 		}
 	}
 	.parent {
+		width: 100%;
+		height: auto;
 		overflow: hidden;
 		position: relative;
 		float: left;
@@ -15,7 +16,7 @@
 	}
 	.child {
 		width: 100%;
-		height: 100%;
+		height: auto;
 		overflow: hidden;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -39,6 +40,9 @@
 		height: 50px;
 		cursor: pointer;
 	}
+	.child>img{
+		width: 100%;
+	}
 	.parent:hover .child, .parent:focus .child {
 		-ms-transform: scale(1.2);
 		-moz-transform: scale(1.2);
@@ -52,14 +56,14 @@
 
 	.parent:hover a, .parent:focus a {
 		display: block;
-		margin-top: 0.2em;
+		margin-top: 15%; 
 	}
 
 	.child:before {
 		content: "";
 		display: none;
-		height: 100%;
 		width: 100%;
+		height: 100%;
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -121,5 +125,5 @@
 
 
 </div><!--container-->
-<? include "footer.php" ?>
+<?php include "footer.php" ?>
 </body>
