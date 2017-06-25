@@ -1,4 +1,5 @@
-<footer class="page-footer cyan">
+</div><!--container-->
+<footer class="page-footer cyan" style="bottom:">
 	<div class="container">
 		<div class="row">
 			<div class="col l6 s12">
@@ -38,27 +39,10 @@
 			$(this).addClass('orange white-text');
 		});
 
-		//groceries content show-hide script
-		$("#migrosDiv").click(function(){
-			$(".tab1").toggle();
-			$("html, body").animate({ scrollTop: $('.tab1').offset().top }, 1000);
-		});
-		$("#bimDiv").click(function(){
-			$(".tab2").toggle();
-			$("html, body").animate({ scrollTop: $('.tab2').offset().top }, 1000);
-		});
-		$("#a-101Div").click(function(){
-			$(".tab3").toggle();
-			$("html, body").animate({ scrollTop: $('.tab3').offset().top }, 1000);
-		});
-		$("#sokDiv").click(function(){
-			$(".tab4").toggle();
-			$("html, body").animate({ scrollTop: $('.tab4').offset().top }, 1000);
-		});
-		$("#kipaDiv").click(function(){
-			$(".tab5").toggle();
-			$("html, body").animate({ scrollTop: $('.tab5').offset().top }, 1000);
-		});
-	})
+		//Carousel Slider Initialization
+		$('.carousel').carousel();
+
+})
 
 </script>
+</body>

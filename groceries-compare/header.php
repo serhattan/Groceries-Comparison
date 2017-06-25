@@ -54,7 +54,7 @@
  				</li>
  				<li><a href="homepage.php" class="waves-effect waves-orange">Anasayfa</a></li>
  				<li><a href="groceries.php" class="waves-effect waves-orange">Marketler</a></li>
- 				<li><a href="#!" class="waves-effect waves-orange">Ürünler</a></li>
+ 				<li><a href="products.php" class="waves-effect waves-orange">Ürünler</a></li>
  				<li><a href="#!" class="waves-effect waves-orange">Karşılaştırma</a></li>
  			</ul>
  		</div>
@@ -68,7 +68,7 @@
  					<a href="groceries.php" class="white grey-text text-darken-1 z-depth-0 waves-effect waves-yellow btn-large navbarButton" style="width: 100%;"><strong>Marketler</strong></a>
  				</div>
  				<div class="col m3">
- 					<a class="white grey-text text-darken-1 z-depth-0 waves-effect waves-yellow btn-large navbarButton" style="width: 100%;"><strong>Ürünler</strong></a>
+ 					<a href="products.php" class="white grey-text text-darken-1 z-depth-0 waves-effect waves-yellow btn-large navbarButton" style="width: 100%;"><strong>Ürünler</strong></a>
  				</div>
  				<div class="col m3">
  					<a class="white grey-text text-darken-1 z-depth-0 waves-effect waves-yellow btn-large navbarButton" style="width: 100%;"><strong>Karşılaştırma</strong></a>
