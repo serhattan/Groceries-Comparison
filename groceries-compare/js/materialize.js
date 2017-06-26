@@ -7941,7 +7941,6 @@ Picker.extend( 'pickadate', DatePicker )
         }
 
         function tap(e) {
-          e.preventDefault();
           pressed = true;
           dragged = false;
           vertical_dragged = false;

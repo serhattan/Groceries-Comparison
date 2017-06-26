@@ -472,23 +472,5 @@
 		</ul>
 	</div>
 </div>
-<script>
-//groceries content show-hide script
-function groceriesToggle(divId){
-	console.log(divId);
-	document.getElementById("tab1").style.display="none";
-	document.getElementById("tab2").style.display="none";
-	document.getElementById("tab3").style.display="none";
-	document.getElementById("tab4").style.display="none";
-	document.getElementById("tab5").style.display="none";
-	document.getElementById("tab6").style.display="none";
 
-	var x = document.getElementById(divId);
-	if (x.style.display === 'none') {
-		x.style.display = 'block';
-	}else{
-		x.style.display = 'none';
-	}
-}
-</script>
 <?php include "footer.php" ?>

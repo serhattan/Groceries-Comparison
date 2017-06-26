@@ -25,7 +25,54 @@
 </footer>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/materialize.js"></script>
+
+<script>
+//groceries content show-hide script
+function groceriesToggle(divId){
+	console.log(divId);
+	document.getElementById("tab1").style.display="none";
+	document.getElementById("tab2").style.display="none";
+	document.getElementById("tab3").style.display="none";
+	document.getElementById("tab4").style.display="none";
+	document.getElementById("tab5").style.display="none";
+	document.getElementById("tab6").style.display="none";
+
+	var x = document.getElementById(divId);
+	if (x.style.display === 'none') {
+		x.style.display = 'block';
+	}else{
+		x.style.display = 'none';
+	}
+}
+
+//fromindex.php redirected page show div script
+var sPageURL = window.location.hash;
+var result = sPageURL.substring(1);
+document.getElementById(result).style.display="block";
+
+//products show hide categories script
+function productsToggle(divId){
+	document.getElementById("breakfastSquare").style.display="none";
+	document.getElementById("fruitSquare").style.display="none";
+	document.getElementById("foodSquare").style.display="none";
+	document.getElementById("beveragesSquare").style.display="none";
+	document.getElementById("meatSquare").style.display="none";
+	document.getElementById("spraySquare").style.display="none";
+
+	var x = document.getElementById(divId);
+	if (x.style.display === 'none') {
+		x.style.display = 'block';
+	}else{
+		x.style.display = 'none';
+	}
+}
+
+//index.php categories route script
+function indexRoute(divId){
+	document.location.href ="http://localhost/Groceries-Compare/groceries-compare/products.php#"+divId;
+}
+</script>
 <script>
 	$( document ).ready(function(){
 
@@ -40,9 +87,7 @@
 		});
 
 		//Carousel Slider Initialization
-		$('.carousel').carousel();
-
-})
-
+		$('.carousel').carousel();		
+	})
 </script>
 </body>

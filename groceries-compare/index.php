@@ -76,7 +76,7 @@
 			<div class="parent">
 				<div class="child">
 					<img src="css/images/mbreakfast.jpg" class="responsive-img">
-					<a href="#"><img src="css/images/mbreakfast.png" class="responsive-img"></a>
+					<a href="#" onclick="indexRoute('breakfastSquare');"><img src="css/images/mbreakfast.png" class="responsive-img"></a>
 				</div>
 			</div>
 		</div>
@@ -84,7 +84,7 @@
 			<div class="parent">
 				<div class="child">
 					<img src="css/images/mfruit.jpg" class="responsive-img">
-					<a href="#"><img src="css/images/mfruit.png" class="responsive-img"></a>
+					<a href="#"  onclick="indexRoute('fruitSquare');"><img src="css/images/mfruit.png" class="responsive-img"></a>
 				</div>
 			</div>
 		</div>
@@ -92,7 +92,7 @@
 			<div class="parent">
 				<div class="child">
 					<img src="css/images/mfood.jpg" class="responsive-img">
-					<a href="#"><img src="css/images/mfood.png" class="responsive-img"></a>
+					<a href="#" onclick="indexRoute('foodSquare');"><img src="css/images/mfood.png" class="responsive-img"></a>
 				</div>
 			</div>
 		</div>
@@ -100,7 +100,7 @@
 			<div class="parent">
 				<div class="child">
 					<img src="css/images/mmeat.jpg" class="responsive-img">
-					<a href="#"><img src="css/images/mmeat.png" class="responsive-img"></a>
+					<a href="#" onclick="indexRoute('meatSquare');"><img src="css/images/mmeat.png" class="responsive-img"></a>
 				</div>
 			</div>
 		</div>
@@ -108,7 +108,7 @@
 			<div class="parent">
 				<div class="child">
 					<img src="css/images/mbaverages.jpg" class="responsive-img">
-					<a href="#"><img src="css/images/mbaverages.png" class="responsive-img"></a>
+					<a href="#" onclick="indexRoute('beveragesSquare');"><img src="css/images/mbaverages.png" class="responsive-img"></a>
 				</div>
 			</div>
 		</div>
@@ -116,12 +116,10 @@
 			<div class="parent">
 				<div class="child">
 					<img src="css/images/mspray.jpg" class="responsive-img">
-					<a href="#"><img src="css/images/mspray.png" class="responsive-img"></a>
+					<a href="#" onclick="indexRoute('spraySquare');"><img src="css/images/mspray.png" class="responsive-img"></a>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-
-
 <?php include "footer.php" ?>
